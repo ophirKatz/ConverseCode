@@ -1,0 +1,8 @@
+<h1>Users</h1>
+
+<ul class="list-unstyled" *ngIf="users.length > 0">
+  <li class="card card-body" *ngFor="let user of users">
+    <h3>{{ user.firstName }} {{user.lastName}}</h3>
+    <h4>{{ user.email }}</h4>
+  </li>
+</ul>
